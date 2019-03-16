@@ -3,6 +3,11 @@ LTI Demo
 
 This is a small example spring LTI webapp that does the bare minimum to handle a LTI launch and display back a web page. This uses the `lti-launch` library that does most of the heavy lifting of validating the LTI launch and setting up a session. The tool is a single controller with a JSP to render the output.
 
+Build
+-----
+
+[![Build Status](https://travis-ci.org/ox-it/lti-demo.svg?branch=master)](https://travis-ci.org/ox-it/lti-demo)
+
 Configuration
 -------------
 

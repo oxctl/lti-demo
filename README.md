@@ -15,14 +15,14 @@ There are a few configuration options to setup the tool provider:
 
 ```properties
 # The LTI key for the launch (default: consumer)
-lti-demo.instance=canvas
+lti.instance=canvas
 # The LTI secret for the launch, which in production must be secure (default: secret)
-lti-demo.secret=canvas
+lti.secret=canvas
 # The name of the application (default: LTI Demo)
-lti-demo.name=Example LTI Demo
+lti.name=Example LTI Demo
 # The URL of the tool consumer (default: http://example.com)
 # This only used when checking service sending request, which is not enabled by default.
-lti-demo.url=http://canvas.instructure.com
+lti.url=http://canvas.instructure.com
 ```
 
 Building
@@ -44,10 +44,10 @@ Having built the code it can be run, you can also pass in configuration if you h
 
 ```bash
 java -jar target/lti-demo-0.0.1-SNAPSHOT.war \
-  --lti-demo.instance=canvas \
-  --lti-demo.secret=canvas \
-  --lti-demo.name="Example LTI Demo" \
-  --lti-demo.url=http://canvas.instructure.com
+  --lti.instance=canvas \
+  --lti.secret=canvas \
+  --lti.name="Example LTI Demo" \
+  --lti.url=http://canvas.instructure.com
 ```
 
 

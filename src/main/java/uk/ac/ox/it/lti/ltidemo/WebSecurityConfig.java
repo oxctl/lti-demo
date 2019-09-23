@@ -48,7 +48,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
 
         http.setSharedObject(LtiLoginService.class, ltiLoginService);
-        LtiConfigurer<HttpSecurity> ltiConfigurer = new LtiConfigurer<>(toolConsumerService, "/launch", false);
+        LtiConfigurer<HttpSecurity> ltiConfigurer = new LtiConfigurer<>(toolConsumerService, "/launch", false, false, null);
         http.apply(ltiConfigurer);
 
         // We have to disable CSRF on the LTI launch.

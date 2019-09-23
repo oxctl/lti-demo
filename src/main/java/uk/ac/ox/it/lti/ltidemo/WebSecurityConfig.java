@@ -33,6 +33,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     @Value("${lti.secret:secret}")
     private String secret;
 
+
     @Autowired
     private LtiLoginService ltiLoginService;
 
@@ -66,11 +67,6 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     @Bean
     public ToolConsumerService toolConsumerService() {
         return new SingleToolConsumerService(instance, name, url, secret);
-    }
-
-    @Bean
-    public LtiLoginService ltiLoginService() {
-        return new SimpleLtiLoginService();
     }
 
     /**

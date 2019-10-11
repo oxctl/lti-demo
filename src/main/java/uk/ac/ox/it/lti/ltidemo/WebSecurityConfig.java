@@ -21,17 +21,18 @@ import org.springframework.security.provisioning.UserDetailsManager;
 @EnableWebSecurity
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
-    @Value("${lti-demo.instance:consumer}")
+    @Value("${lti.instance:consumer}")
     private String instance;
 
-    @Value("${lti-demo.name:LTI Demo}")
+    @Value("${lti.name:LTI Demo}")
     private String name;
 
-    @Value("${lti-demo.url:http://example.com}")
+    @Value("${lti.url:http://example.com}")
     private String url;
 
-    @Value("${lti-demo.secret:secret}")
+    @Value("${lti.secret:secret}")
     private String secret;
+
 
     @Autowired
     private LtiLoginService ltiLoginService;
@@ -66,11 +67,6 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     @Bean
     public ToolConsumerService toolConsumerService() {
         return new SingleToolConsumerService(instance, name, url, secret);
-    }
-
-    @Bean
-    public LtiLoginService ltiLoginService() {
-        return new SimpleLtiLoginService();
     }
 
     /**

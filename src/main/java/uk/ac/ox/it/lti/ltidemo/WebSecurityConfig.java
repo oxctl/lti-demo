@@ -41,7 +41,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     private ToolConsumerService toolConsumerService;
 
     @Override
-    public void configure(WebSecurity webSecurity) throws Exception {
+    public void configure(WebSecurity webSecurity) {
         super.configure(webSecurity);
     }
 

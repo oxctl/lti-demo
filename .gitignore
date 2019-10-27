@@ -24,3 +24,5 @@ HELP.md
 /nbdist/
 /.nb-gradle/
 /build/
+config/keystore.p12
+config/application.properties

@@ -15,7 +15,7 @@ public class LtiDemoApplication {
 
 	@Bean
 	public LtiLoginService ltiLoginService() {
-		return new SimpleLtiLoginService();
+		return new FixedLtiLoginService();
 	}
 
 }

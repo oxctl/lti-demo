@@ -6,7 +6,7 @@ This is a small example spring LTI webapp that does the bare minimum to handle a
 Build
 -----
 
-[![Build Status](https://travis-ci.org/ox-it/lti-demo.svg?branch=master)](https://travis-ci.org/ox-it/lti-demo)
+[![Build Status](https://travis-ci.org/oxctl/lti-demo.svg?branch=master)](https://travis-ci.org/oxctl/lti-demo)
 
 Configuration
 -------------
